@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    background-color: #000;
+    background-image: url('/images/stars.png');
+    background-repeat: repeat;
+}
+
+.circle1 {
+    height: 100vw;
+    width: 100%;
+    background-image: url('/images/circle-tegaki.png');
+    background-repeat: repeat;
+    animation-name: topSlideIn;
+    animation-iteration-count: infinite;
+    animation-duration: 200s;
+}
+
+.circle2 {
+    height: 100vw;
+    width: 100%;
+    background-image: url('/images/circle-tegaki.png');
+    background-repeat: repeat;
+    animation-name: leftSlideIn;
+    animation-iteration-count: infinite;
+    animation-duration: 200s;
+}
+
+@keyframes topSlideIn {
+    0% {
+        background-position: top;
+    }
+    100% {
+        background-position: bottom;
+    }
+}
+
+@keyframes leftSlideIn {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
